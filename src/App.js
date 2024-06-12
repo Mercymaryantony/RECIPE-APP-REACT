@@ -14,6 +14,7 @@ function App() {
       <Route path='/s'element={<Search/>}/>
       <Route path='/d'element={<Delete/>}/>
       <Route path='/v'element={<View/>}/>
+      
     </Routes>
     </BrowserRouter>
     </div>
