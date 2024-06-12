@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const View = () => {
     const[data,changedata]=useState([])
     const fetchdata = ()=>{
-        axios.get("http://localhost:8080/view").then(
+        axios.post("http://localhost:8080/view",data).then(
             (response)=>{
                 changedata(response.data)
                 console.log(data)
